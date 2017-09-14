@@ -6,10 +6,12 @@ public class PlayerController : MonoBehaviour {
 
     public float speed;
     private Rigidbody rb;
+    private int count;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        count = 0;
     }
 
     void FixedUpdate()
@@ -27,6 +29,7 @@ public class PlayerController : MonoBehaviour {
         if (other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
+            count = count + 1;
         }
     }
 }
