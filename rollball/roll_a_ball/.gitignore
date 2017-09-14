@@ -38,6 +38,7 @@ glloadgen/
 glm/
 Temp/
 Library/
+Builds/
 
 # vim
 *.swp
