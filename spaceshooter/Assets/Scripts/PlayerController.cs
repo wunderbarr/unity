@@ -14,9 +14,25 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public Boundary boundary;
     public float tilt;
-	
-	// Update is called once per frame
-	void Update ()
+
+    public GameObject shot;
+    public Transform shotSpam;
+    public float fireRate;
+
+    private float nextFire;
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetButton("Fire1") && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            Instantiate(shot, shotSpam.position, shotSpam.rotation);
+        }
+    }
+
+
+	void FixedUpdate ()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
