@@ -39,6 +39,7 @@ glm/
 Temp/
 Library/
 Builds/
+obj/
 
 # vim
 *.swp
