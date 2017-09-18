@@ -1,0 +1,88 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.cache
+
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# libs, etc
+Animation/
+Fonts/
+GiParamaters/
+PostProcessing/
+Profiles/
+Library/
+Prefabs/
+_Complete-Game/
+_Scenes/
+Audio/
+Materials/
+Models/
+Textures/
+TutorialInfo/
+
+# vim
+*.swp
+*~
+
+# visual studio
+*.sln
+*.suo
+# more to add
+*.config
+*.csproj
+*.pdb
+*.manifest
+*.cache
+*.txt
+*.pdf
+TemporaryGeneratedFile*.cs
+AssemblyInfo.cs
+
+#assets
+*.meta
+*.unity
+*.mat
+
+#library
+*.db
+*.asset
+*.log
+*.prefs
+*.dwlt
+*.json
+*.mdb
+*.stamp
+*.bin
+
+#no postfix
+AnnotationManager
+assetDatabase3
+AssetImportState
+ScriptMapper
+*.meta
